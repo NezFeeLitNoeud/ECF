@@ -1,0 +1,59 @@
+form {
+    /* border: 1px violet solid; */
+    width: 50%;
+    height: 100px;
+    margin: 10% auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.row {
+    flex: 1;
+}
+.column {
+    height: 50%;
+    width: 100%;
+    display: flex;
+}
+
+input {
+width: 200px;
+align-self: center;
+border: none;
+margin-left: 50px;
+height: 25px;
+border-radius: 5px;
+padding-left: 5px;
+
+}
+
+label {
+    width: 90px;;
+    align-self: center;
+    font-weight: bold;
+}
+
+button {
+    border-radius: 5px;
+    border: 1px black solid;
+    height: 30px;
+    width: 90px;
+    margin-left: 45%;
+    margin-top: 1%;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+button:hover {
+    cursor: pointer;  
+     height: 29px;
+    width: 89px;
+}

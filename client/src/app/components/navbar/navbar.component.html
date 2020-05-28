@@ -1,0 +1,6 @@
+<ul>
+  <li *ngIf="!loggedIn()"> <a routerLink="connexion" routerLinkActive="active">Connexion</a></li>
+  <li *ngIf="!loggedIn()"> <a routerLink="registration">Inscription</a></li>
+  <li *ngIf="loggedIn()"> <a routerLink="profil">Profil</a></li>
+  <li *ngIf="loggedIn()"> <a routerLink="logout">Deconnexion</a></li>
+</ul>

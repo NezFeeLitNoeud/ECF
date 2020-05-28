@@ -1,0 +1,29 @@
+
+<div class="main">
+  <h1>HateBook</h1>
+  <p>Bienvenu sur Hatebook, le réseau social ou vous n'avez pas besoins de faire semblant d'aimer les autres.</p>
+  <p>Si vous avez déjà un compte vous pouvous vous connectez. Dans le cas contraire n'hésité pas à vous inscrire </p>
+</div>
+
+
+
+<form id="formulaire" name="form" (ngSubmit)="loginForm.form.valid && login()" #loginForm="ngForm" novalidate>
+  <div class="connexion">
+    <label for="email">Email : </label>
+    <input type="text"
+           id="email"
+           name="email" [(ngModel)]="model.email"
+           #email="ngModel" required/>
+  </div>
+  <div class="connexion">
+    <label for="password">Password : </label>
+    <input type="password"
+           id="password"
+           name="password" [(ngModel)]="model.password"
+           #password="ngModel" required/>
+  </div>
+  <div>
+    <div *ngIf="!isLogged" id="error">Veuillez rentrer un mot de passe et/ou une adresse mail valide.</div>
+  </div>
+  <button>Login</button>
+</form>

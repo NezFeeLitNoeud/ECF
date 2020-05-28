@@ -1,0 +1,45 @@
+
+<form name="form" (ngSubmit)="registerForm.form.valid && register()" #registerForm="ngForm" novalidate>
+  <h2>Register</h2>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+          <label for="firstname">Firstname : </label>
+          <input type="text"
+                id="usernfirstnameame"
+                placeholder="Prénom"
+                name="firstname" [(ngModel)]="model.firstname"
+                #firstname="ngModel" required/>
+                
+        </div>
+        <div class="column">
+          <label for="lastname">Lastname : </label>
+          <input type="text"
+                id="lastname"
+                placeholder="Nom"
+                name="lastname" [(ngModel)]="model.lastname"
+                #lastname="ngModel" required/>
+        </div>
+    </div>
+    <div class="row">
+      <div class="column">
+          <label for="email">Email : </label>
+          <input type="email"
+                id="email"
+                placeholder="Email"
+                name="email" [(ngModel)]="model.email"
+                #email="ngModel" required/>
+        </div>
+        <div class="column">
+          <label for="password">Password : </label>
+          <input type="password"
+          placeholder="Mot de passe"
+                id="password"
+                name="password" [(ngModel)]="model.password"
+                #password="ngModel" required/>
+        </div>
+    </div>
+  </div>
+
+  <button>Register</button>
+</form>

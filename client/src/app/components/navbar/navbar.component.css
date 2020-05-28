@@ -1,0 +1,30 @@
+ul {
+    /* border: 1px blue solid; */
+    height: 70px;
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+li {
+    font-size: 1.1em;
+    text-transform: uppercase;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 4px #990054 solid;
+    height: 100%;
+    width: 150px;
+}
+
+li > a {
+    text-decoration: none;
+    color: #990054;
+    font-weight: bold;
+}
+
+li:hover {
+    box-shadow: 5px 5px 10px #027E78;
+    cursor: pointer;
+}
